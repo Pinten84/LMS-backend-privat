@@ -1,75 +1,62 @@
-# LMS Backend API (Svensk översikt)
 
-Ett modernt .NET 9-baserat REST API för ett Learning Management System (LMS). Arkitekturen följer tydliga lager (API / Presentation / Application / Application.Contracts / Domain / Infrastructure / Shared) och använder Identity för autentisering, JWT för access tokens samt Mapster för objektmappning.
+# LMS Backend API
 
-## Innehåll
-- [Arkitekturöversikt](#arkitekturöversikt)
-- [Teknikstack](#teknikstack)
-- [Komma igång](#komma-igång)
-- [Konfiguration](#konfiguration)
-- [Autentisering-och-roller](#autentisering-och-roller)
-- [Seeding-av-data](#seeding-av-data)
-- [API-resurser-översikt](#api-resurser-översikt)
-- [Exempel-på-flöde](#exempel-på-flöde)
-- [Vanliga-fel-och-felsökning](#vanliga-fel-och-felsökning)
-- [Nästa-steg-och-rekommendationer](#nästa-steg-och-rekommendationer)
+Ett modernt .NET 9-baserat REST API för Learning Management System (LMS).
 
----
-
-## Komma igång
-
-1. **Klona repot**
-  ```sh
-  git clone <repo-url>
-  cd LMS-backend-privat
-  ```
-2. **Bygg projektet**
-  ```sh
-  dotnet build LMS.API
-  ```
-3. **Starta API-servern**
-  ```sh
-  dotnet run --project LMS.API
-  ```
-4. **Öppna Swagger**
-  Gå till: [https://localhost:7213/swagger](https://localhost:7213/swagger)
+## Kom igång
+1. Klona repot:
+   ```sh
+   git clone <repo-url>
+   cd LMS-backend-privat
+   ```
+2. Bygg och starta:
+   ```sh
+   dotnet build LMS.API
+   dotnet run --project LMS.API
+   ```
+3. Öppna Swagger:
+   [https://localhost:7213/swagger](https://localhost:7213/swagger)
 
 ### Testanvändare
-Du kan använda dessa konton direkt mot API:et via Swagger:
-
 | Roll     | E-post             | Lösenord                |
 |----------|--------------------|-------------------------|
 | Admin    | admin@test.com     | ChangeThisDevOnly123!   |
 | Teacher  | teacher@test.com   | DefaultSeedPassword123! |
 | Student  | student@test.com   | DefaultSeedPassword123! |
-
 Fler testanvändare skapas automatiskt vid första start.
 
+## Arkitektur
+Projektet är uppdelat i lager:
+- API (controllers, swagger, auth)
+- Presentation
+- Application (affärslogik)
+- Application.Contracts (DTOs, kontrakt)
+- Domain (modeller)
+- Infrastructure (databas, migrationer)
+- Shared (hjälpklasser)
+
+## API-resurser
+Exempel på endpoints:
+- /api/auth/login (inloggning, JWT)
+- /api/courses (kurser)
+- /api/modules (moduler)
+- /api/activities (aktiviteter)
+- /api/documents (dokument)
+
+## Vanliga problem
+| Problem         | Orsak                | Lösning                       |
+|-----------------|----------------------|-------------------------------|
+| 401 Unauthorized| Saknar JWT           | Logga in och skicka token     |
+| 500 vid seeding | Saknar "password"   | Sätt i user-secrets           |
+| DB-låsning      | LocalDB är låst      | Byt DB-namn/stäng anslutning  |
+
+## Tips
+- Testa API:et enkelt via Swagger.
+- JWT krävs för skyddade endpoints.
+- Seeding skapar testdata automatiskt.
+
 ---
-
-## Arkitekturöversikt
-```
-LMS.API (Web API, controllers, swagger, auth config)
-LMS.Presentation (Ev. framtida presentationsspecifika concerns)
-LMS.Application (Affärslogik / Services)
-LMS.Application.Contracts (DTOs + Repository- & Service-kontrakt)
-LMS.Domain (Domänmodeller / Entities)
-LMS.Infrastructure (EF Core, DbContext, Migrationer, Repository-implementationer)
-LMS.Shared (Gemensamma hjälpklasser, ev. extensions)
-```
-Principer:
-- Tydlig separering av ansvar
-- Dependency Inversion: Yttre lager refererar inåt – aldrig tvärtom
-- Idempotent seeding för roller och admin
-
-## Teknikstack
-- .NET 9 / ASP.NET Core Web API
-- Entity Framework Core 9 + SQL Server LocalDB
-- ASP.NET Core Identity (ApplicationUser)
-- JWT (Access + Refresh token stöd i tjänstelogik)
-- Mapster (DTO <-> Domän)
-- Bogus (data-generering vid seed)
-- Swagger / OpenAPI (inkl. Bearer auth)
+Frågor eller förslag? Skapa en issue eller PR.
 
 ## Komma igång
 ### 1. Klona repo
