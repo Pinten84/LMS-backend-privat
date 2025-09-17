@@ -1,0 +1,9 @@
+using System.Linq.Expressions;
+
+namespace LMS.Application.Contracts.Repositories;
+
+public interface IInternalRepositoryBase<T>
+{
+    IQueryable<T> FindAll(bool trackChanges = false);
+    IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges = false);
+}

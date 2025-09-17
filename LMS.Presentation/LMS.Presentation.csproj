@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+  <!-- No NuGet packages needed for DTO-only project -->
+  </ItemGroup>
+
+  <ItemGroup>
+  <ProjectReference Include="..\LMS.Application.Contracts\LMS.Application.Contracts.csproj" />
+  <ProjectReference Include="..\LMS.Application\LMS.Application.csproj" />
+  </ItemGroup>
+
+</Project>
