@@ -3,6 +3,9 @@
 
 Ett modernt .NET 9-baserat REST API för Learning Management System (LMS).
 
+**Frontendutvecklare? Läs API-guiden här:**
+[API-FRONTEND-GUIDE.md](API-FRONTEND-GUIDE.md)
+
 ## Kom igång
 1. Klona repot:
    ```sh
