@@ -51,8 +51,7 @@ namespace LMS.API.Controllers
                 items = result
             });
         }
-        [HttpGet("{id}")]
-        [HttpDelete("{id}")]
+    [HttpGet("{id}")]
         /// <summary>
         /// Retrieves a document.
         /// </summary>
