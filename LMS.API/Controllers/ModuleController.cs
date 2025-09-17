@@ -1,12 +1,12 @@
-using LMS.Domain.Entities;
-using Microsoft.AspNetCore.Authorization;
-using LMS.Application;
-using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LMS.Application;
 using LMS.Application.Contracts.DTOs;
 using LMS.Application.Contracts.DTOs.Modules;
+using LMS.Domain.Entities;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace LMS.API.Controllers
@@ -21,7 +21,6 @@ namespace LMS.API.Controllers
         {
             _moduleService = moduleService;
         }
-
         [HttpGet]
         /// <summary>
         /// Hämtar alla moduler med paginering och sökning.
@@ -44,7 +43,6 @@ namespace LMS.API.Controllers
                 items = result
             });
         }
-
         [HttpGet("{id}")]
         /// <summary>
         /// Hämtar en modul med alla dess relationer.
@@ -61,7 +59,6 @@ namespace LMS.API.Controllers
             var moduleDto = module.Adapt<ModuleDto>();
             return Ok(moduleDto);
         }
-
         [HttpPost]
         /// <summary>
         /// Skapar en ny modul.
@@ -108,7 +105,6 @@ namespace LMS.API.Controllers
                 id = module.Id
             }, module);
         }
-
         [HttpPut("{id}")]
         /// <summary>
         /// Uppdaterar en modul.
@@ -123,7 +119,6 @@ namespace LMS.API.Controllers
             if (id != dto.Id)
                 return BadRequest(new
                 {
-                    error = "ID i URL och body matchar inte."
                 });
             if (!ModelState.IsValid)
                 return BadRequest(new
@@ -157,7 +152,6 @@ namespace LMS.API.Controllers
             }
             return NoContent();
         }
-
         [HttpDelete("{id}")]
         /// <summary>
         /// Tar bort en modul.

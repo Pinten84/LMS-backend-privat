@@ -1,10 +1,9 @@
-using System.Net;
-using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
+using System.Net;
+using System.Text.Json;
 
 namespace LMS.API.Middleware;
-
 public class ProblemDetailsMiddleware
 {
     private readonly RequestDelegate _next;
@@ -14,7 +13,6 @@ public class ProblemDetailsMiddleware
         _next = next;
         _logger = logger;
     }
-
     public async Task InvokeAsync(HttpContext context)
     {
         try
@@ -42,7 +40,6 @@ public class ProblemDetailsMiddleware
             await WriteProblemAsync(context, StatusCodes.Status500InternalServerError, "Ett oväntat fel inträffade", "https://datatracker.ietf.org/doc/html/rfc7231#section-6.6.1");
         }
     }
-
     private static async Task WriteProblemAsync(HttpContext context, int statusCode, string detail, string type)
     {
         if (context.Response.HasStarted)
@@ -61,9 +58,8 @@ public class ProblemDetailsMiddleware
         await context.Response.WriteAsync(json);
     }
 }
-
 public static class ProblemDetailsMiddlewareExtensions
 {
     public static IApplicationBuilder UseStandardProblemDetails(this IApplicationBuilder app)
-        => app.UseMiddleware<ProblemDetailsMiddleware>();
+=> app.UseMiddleware<ProblemDetailsMiddleware>();
 }

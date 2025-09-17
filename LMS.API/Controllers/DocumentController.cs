@@ -1,12 +1,12 @@
-using LMS.Domain.Entities;
-using Microsoft.AspNetCore.Authorization;
-using LMS.Application;
-using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LMS.Application;
 using LMS.Application.Contracts.DTOs;
 using LMS.Application.Contracts.DTOs.Documents;
+using LMS.Domain.Entities;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace LMS.API.Controllers
@@ -21,9 +21,7 @@ namespace LMS.API.Controllers
         {
             _documentService = documentService;
         }
-
         [HttpGet]
-        /// <summary>
         /// Retrieves all documents with pagination and search.
         /// </summary>
         /// <param name="page">Page number (default 1)</param>
@@ -53,8 +51,8 @@ namespace LMS.API.Controllers
                 items = result
             });
         }
-
         [HttpGet("{id}")]
+        [HttpDelete("{id}")]
         /// <summary>
         /// Retrieves a document.
         /// </summary>
@@ -70,7 +68,6 @@ namespace LMS.API.Controllers
             var documentDto = document.Adapt<DocumentDto>();
             return Ok(documentDto);
         }
-
         [HttpPost]
         /// <summary>
         /// Creates a new document.
@@ -119,7 +116,6 @@ namespace LMS.API.Controllers
                 id = document.Id
             }, document);
         }
-
         [HttpPut("{id}")]
         /// <summary>
         /// Uppdaterar ett dokument.
@@ -166,7 +162,6 @@ namespace LMS.API.Controllers
             }
             return NoContent();
         }
-
         [HttpDelete("{id}")]
         /// <summary>
         /// Tar bort ett dokument.

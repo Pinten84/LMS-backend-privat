@@ -1,0 +1,42 @@
+# .NET build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# NuGet packages
+*.nupkg
+# NuGet restore
+*.nuget
+
+# StyleCop/format reports
+stylecop-report.txt/
+stylecop-domain-report.txt/
+*.json
+
+# Secrets
+secrets.json
+
+# Others
+TestResults/
+*.log
+
+# Ignore Mac/Linux files
+.DS_Store
+*.swp
+
+# Ignore Windows thumbnail cache files
+Thumbs.db
+
+# Ignore JetBrains Rider project files
+.idea/

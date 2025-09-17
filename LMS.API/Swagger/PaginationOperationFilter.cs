@@ -2,7 +2,6 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace LMS.API.Swagger;
-
 /// <summary>
 /// Adds documentation for standard pagination query parameters if a matching signature is detected.
 /// </summary>
@@ -12,7 +11,6 @@ public class PaginationOperationFilter : IOperationFilter
     {
         if (operation.Parameters == null)
             return;
-
         // If action already exposes page/pageSize in its parameters, enrich descriptions
         foreach (var param in operation.Parameters)
         {

@@ -1,12 +1,12 @@
-using LMS.Domain.Entities;
-using Microsoft.AspNetCore.Authorization;
-using LMS.Application;
-using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LMS.Application;
 using LMS.Application.Contracts.DTOs;
 using LMS.Application.Contracts.DTOs.Activities;
+using LMS.Domain.Entities;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace LMS.API.Controllers
@@ -21,7 +21,6 @@ namespace LMS.API.Controllers
         {
             _activityService = activityService;
         }
-
         [HttpGet]
         /// <summary>
         /// Retrieves all activities with pagination and search.
@@ -44,7 +43,6 @@ namespace LMS.API.Controllers
                 items = result
             });
         }
-
         [HttpGet("{id}")]
         /// <summary>
         /// Retrieves an activity with all its documents.
@@ -61,7 +59,6 @@ namespace LMS.API.Controllers
             var activityDto = activity.Adapt<ActivityDto>();
             return Ok(activityDto);
         }
-
         [HttpPost]
         /// <summary>
         /// Creates a new activity.
@@ -109,7 +106,6 @@ namespace LMS.API.Controllers
                 id = activity.Id
             }, activity);
         }
-
         [HttpPut("{id}")]
         /// <summary>
         /// Updates an activity.
@@ -155,7 +151,6 @@ namespace LMS.API.Controllers
             }
             return NoContent();
         }
-
         [HttpDelete("{id}")]
         /// <summary>
         /// Deletes an activity.

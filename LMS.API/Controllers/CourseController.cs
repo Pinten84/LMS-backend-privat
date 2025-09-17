@@ -1,16 +1,15 @@
-using LMS.Domain.Entities;
-using LMS.Application.Contracts.DTOs;
-using LMS.Application.Contracts.DTOs.Courses;
-using Microsoft.AspNetCore.Authorization;
-using LMS.Application;
-using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Mapster;
-using Swashbuckle.AspNetCore.Annotations;
-
 namespace LMS.API.Controllers
 {
+    using LMS.Domain.Entities;
+    using LMS.Application.Contracts.DTOs;
+    using LMS.Application.Contracts.DTOs.Courses;
+    using Microsoft.AspNetCore.Authorization;
+    using LMS.Application;
+    using Microsoft.AspNetCore.Mvc;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Mapster;
+    using Swashbuckle.AspNetCore.Annotations;
     [ApiController]
     [Route("api/courses")]
     [Authorize]
@@ -21,7 +20,6 @@ namespace LMS.API.Controllers
         {
             _courseService = courseService;
         }
-
         [HttpGet]
         /// <summary>
         /// Retrieves all courses with pagination and search.
@@ -44,7 +42,6 @@ namespace LMS.API.Controllers
                 items = result
             });
         }
-
         [HttpGet("{id}")]
         /// <summary>
         /// Retrieves a course with all its relationships.
@@ -61,7 +58,6 @@ namespace LMS.API.Controllers
             var courseDto = course.Adapt<CourseDto>();
             return Ok(courseDto);
         }
-
         [HttpPost]
         /// <summary>
         /// Creates a new course.
@@ -164,7 +160,6 @@ namespace LMS.API.Controllers
                 id = course.Id
             }, courseDto);
         }
-
         [HttpPut("{id}")]
         /// <summary>
         /// Uppdaterar en kurs.
@@ -214,7 +209,6 @@ namespace LMS.API.Controllers
             }
             return NoContent();
         }
-
         [HttpDelete("{id}")]
         /// <summary>
         /// Tar bort en kurs.

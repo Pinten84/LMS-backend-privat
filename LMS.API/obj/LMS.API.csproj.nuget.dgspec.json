@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.API\\LMS.API.csproj": {}
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.API\\LMS.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.API\\LMS.API.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.API\\LMS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.API\\LMS.API.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.API\\LMS.API.csproj",
         "projectName": "LMS.API",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.API\\LMS.API.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.API\\LMS.API.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.API\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,23 +32,23 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Presentation\\LMS.Presentation.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Presentation\\LMS.Presentation.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Presentation\\LMS.Presentation.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Presentation\\LMS.Presentation.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj"
               }
             }
           }
@@ -81,10 +81,6 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.8, )"
-            },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
               "version": "[9.0.8, )"
@@ -110,12 +106,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
-            },
-            "StyleCop.Analyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[1.1.118, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -153,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj",
         "projectName": "LMS.Application.Contracts",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -181,11 +171,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj"
               }
             }
           }
@@ -225,14 +215,14 @@
         }
       }
     },
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj",
         "projectName": "LMS.Application",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -253,17 +243,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj"
               }
             }
           }
@@ -312,14 +302,14 @@
         }
       }
     },
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj",
         "projectName": "LMS.Domain",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -358,7 +348,7 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.Extensions.Identity.Stores": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.8, )"
             }
@@ -383,14 +373,14 @@
         }
       }
     },
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj",
         "projectName": "LMS.Infrastructure",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\LMS.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\LMS.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -411,11 +401,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Domain\\LMS.Domain.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Domain\\LMS.Domain.csproj"
               }
             }
           }
@@ -483,14 +473,14 @@
         }
       }
     },
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Presentation\\LMS.Presentation.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Presentation\\LMS.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Presentation\\LMS.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Presentation\\LMS.Presentation.csproj",
         "projectName": "LMS.Presentation",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Presentation\\LMS.Presentation.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Presentation\\LMS.Presentation.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Presentation\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -511,11 +501,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application.Contracts\\LMS.Application.Contracts.csproj"
               },
-              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj": {
-                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Application\\LMS.Application.csproj"
+              "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj": {
+                "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Application\\LMS.Application.csproj"
               }
             }
           }
@@ -536,23 +526,15 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Bogus": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[35.6.3, )"
-            },
-            "Microsoft.AspNetCore.Cors": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Core": {
-              "target": "Package",
-              "version": "[2.3.0, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[9.0.8, )"
+              "version": "[9.0.3, )"
             },
             "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[9.0.3, )"
             }
@@ -577,14 +559,14 @@
         }
       }
     },
-    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj": {
+    "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj",
         "projectName": "LMS.Shared",
-        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\LMS.Shared.csproj",
+        "projectPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\LMS.Shared.csproj",
         "packagesPath": "C:\\Users\\krist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS-Backend\\LMS.Shared\\obj\\",
+        "outputPath": "C:\\Users\\krist\\source\\repos\\LMS-backend-privat\\LMS.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

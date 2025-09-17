@@ -2,11 +2,11 @@ using LMS.Domain.Configurations;
 using LMS.Infrastructure.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using LMS.Domain.Entities;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 namespace LMS.API.Extensions;
-
 public static class AuthServiceExtension
 {
     //User Secrets Json
@@ -23,12 +23,10 @@ public static class AuthServiceExtension
                          .GetSection(JwtSettings.Section)
                          .Get<JwtSettings>()
                          ?? throw new InvalidOperationException("JwtSettings section is missing or invalid.");
-
         services.AddOptions<JwtSettings>()
                         .Bind(configuration.GetSection(JwtSettings.Section))
                         .Validate(config => !string.IsNullOrWhiteSpace(config.SecretKey), "SecretKey is required")
                         .ValidateDataAnnotations();
-
         services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -48,7 +46,6 @@ public static class AuthServiceExtension
                };
            });
     }
-
     public static void ConfigureIdentity(this IServiceCollection services)
     {
         services.AddIdentityCore<ApplicationUser>(opt =>
@@ -59,11 +56,10 @@ public static class AuthServiceExtension
             opt.Password.RequireUppercase = false;
             opt.Password.RequireNonAlphanumeric = false;
             opt.Password.RequiredLength = 3;
-
             opt.User.RequireUniqueEmail = true;
         })
-               .AddRoles<IdentityRole>()
-               .AddEntityFrameworkStores<ApplicationDbContext>()
-               .AddDefaultTokenProviders();
+            .AddRoles<IdentityRole>()
+                       .AddEntityFrameworkStores<ApplicationDbContext>()
+                       .AddDefaultTokenProviders();
     }
 }

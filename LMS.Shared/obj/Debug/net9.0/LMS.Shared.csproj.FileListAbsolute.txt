@@ -1,0 +1,12 @@
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\bin\Debug\net9.0\LMS.Shared.deps.json
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\bin\Debug\net9.0\LMS.Shared.dll
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\bin\Debug\net9.0\LMS.Shared.pdb
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.AssemblyInfoInputs.cache
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.AssemblyInfo.cs
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.csproj.CoreCompileInputs.cache
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.sourcelink.json
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.dll
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\refint\LMS.Shared.dll
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\LMS.Shared.pdb
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Shared\obj\Debug\net9.0\ref\LMS.Shared.dll

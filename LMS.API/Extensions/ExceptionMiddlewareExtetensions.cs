@@ -1,10 +1,9 @@
 using LMS.Domain.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LMS.API.Extensions;
-
 public static class ExceptionMiddlewareExtetensions
 {
     public static void ConfigureExceptionHandler(this WebApplication app)
@@ -17,10 +16,8 @@ public static class ExceptionMiddlewareExtetensions
                 if (contextFeature != null)
                 {
                     var problemDetailsFactory = app.Services.GetRequiredService<ProblemDetailsFactory>();
-
                     ProblemDetails problemDetails;
                     int statusCode;
-
                     switch (contextFeature.Error)
                     {
                         case TokenValidationException tokenValidationException:
@@ -51,7 +48,6 @@ public static class ExceptionMiddlewareExtetensions
                                 instance: context.Request.Path);
                             break;
                     }
-
                     context.Response.StatusCode = statusCode;
                     await context.Response.WriteAsJsonAsync(problemDetails);
                 }

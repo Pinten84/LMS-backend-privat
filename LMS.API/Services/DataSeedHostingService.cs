@@ -1,11 +1,14 @@
 using Bogus;
 using LMS.Infrastructure.Data;
+
+namespace LMS.API.Services;
 using LMS.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
-namespace LMS.API.Services;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 //Add in secret.json
 //{
 //   "password" :  "YourSecretPasswordHere"
@@ -31,28 +34,21 @@ public class DataSeedHostingService : IHostedService
     public async Task StartAsync(CancellationToken cancellationToken)
     {
         using var scope = serviceProvider.CreateScope();
-
         var env = scope.ServiceProvider.GetRequiredService<IWebHostEnvironment>();
         if (!env.IsDevelopment())
             return;
-
         var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
         var anyUsers = await context.Users.AnyAsync(cancellationToken);
-
         userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
         roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
         ArgumentNullException.ThrowIfNull(roleManager, nameof(roleManager));
         ArgumentNullException.ThrowIfNull(userManager, nameof(userManager));
-
         try
         {
             // Always ensure required roles (idempotent)
             await AddRolesAsync([AdminRole, TeacherRole, StudentRole]);
-
             // Always ensure admin user exists (idempotent)
             await AddOrUpdateAdminUserAsync();
-
             if (!anyUsers)
             {
                 await AddDemoUsersAsync();
@@ -81,11 +77,11 @@ public class DataSeedHostingService : IHostedService
                 continue;
             var role = new IdentityRole { Name = rolename };
             var res = await roleManager.CreateAsync(role);
-
             if (!res.Succeeded)
                 throw new Exception(string.Join("\n", res.Errors));
         }
     }
+
     private async Task AddDemoUsersAsync()
     {
         var teacher = new ApplicationUser
@@ -93,19 +89,15 @@ public class DataSeedHostingService : IHostedService
             UserName = "teacher@test.com",
             Email = "teacher@test.com"
         };
-
         var student = new ApplicationUser
         {
             UserName = "student@test.com",
             Email = "student@test.com"
         };
-
         await AddUserToDb([teacher, student]);
-
         var teacherRoleResult = await userManager.AddToRoleAsync(teacher, TeacherRole);
         if (!teacherRoleResult.Succeeded)
             throw new Exception(string.Join("\n", teacherRoleResult.Errors));
-
         var studentRoleResult = await userManager.AddToRoleAsync(student, StudentRole);
         if (!studentRoleResult.Succeeded)
             throw new Exception(string.Join("\n", studentRoleResult.Errors));
@@ -118,7 +110,6 @@ public class DataSeedHostingService : IHostedService
             e.Email = f.Person.Email;
             e.UserName = f.Person.Email;
         });
-
         await AddUserToDb(faker.Generate(nrOfUsers));
     }
 
@@ -128,13 +119,11 @@ public class DataSeedHostingService : IHostedService
         var email = adminSection["Email"]; // required
         var userName = adminSection["UserName"] ?? email;
         var password = adminSection["Password"]; // required (dev only – recommend secrets for real usage)
-
         if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
         {
             logger.LogWarning("AdminSeed configuration missing Email or Password; skipping admin user creation.");
             return;
         }
-
         var existing = await userManager.FindByEmailAsync(email);
         if (existing == null)
         {
@@ -156,7 +145,6 @@ public class DataSeedHostingService : IHostedService
             // Could update properties if desired; keep minimal for now
             logger.LogInformation("Admin user already exists: {Email}", email);
         }
-
         if (!await userManager.IsInRoleAsync(existing, AdminRole))
         {
             var roleRes = await userManager.AddToRoleAsync(existing, AdminRole);
@@ -167,12 +155,10 @@ public class DataSeedHostingService : IHostedService
             logger.LogInformation("Admin role assigned to user {Email}", email);
         }
     }
-
     private async Task AddUserToDb(IEnumerable<ApplicationUser> users)
     {
         var passWord = configuration["password"];
         ArgumentNullException.ThrowIfNull(passWord, nameof(passWord));
-
         foreach (var user in users)
         {
             var result = await userManager.CreateAsync(user, passWord);
@@ -181,7 +167,6 @@ public class DataSeedHostingService : IHostedService
         }
     }
     public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
-
     private async Task SeedLmsDataAsync(ApplicationDbContext context)
     {
         // Skapa 3 kurser med 2 moduler vardera, varje modul har 2 aktiviteter och 1 dokument
@@ -262,5 +247,4 @@ public class DataSeedHostingService : IHostedService
         await context.Courses.AddRangeAsync(courses);
         await context.SaveChangesAsync();
     }
-
 }

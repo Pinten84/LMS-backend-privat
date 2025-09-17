@@ -1,0 +1,13 @@
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\bin\Debug\net9.0\LMS.Domain.deps.json
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\bin\Debug\net9.0\LMS.Domain.dll
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\bin\Debug\net9.0\LMS.Domain.pdb
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.csproj.AssemblyReference.cache
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.AssemblyInfoInputs.cache
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.AssemblyInfo.cs
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.sourcelink.json
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.dll
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\refint\LMS.Domain.dll
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\LMS.Domain.pdb
+C:\Users\krist\source\repos\LMS-backend-privat\LMS.Domain\obj\Debug\net9.0\ref\LMS.Domain.dll
