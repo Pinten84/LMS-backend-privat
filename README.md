@@ -7,12 +7,45 @@ Ett modernt .NET 9-baserat REST API för ett Learning Management System (LMS). A
 - [Teknikstack](#teknikstack)
 - [Komma igång](#komma-igång)
 - [Konfiguration](#konfiguration)
-- [Autentisering & Roller](#autentisering--roller)
-- [Seeding av data](#seeding-av-data)
-- [API-resurser (översikt)](#api-resurser-översikt)
-- [Exempel på flöde](#exempel-på-flöde)
-- [Vanliga fel & Felsökning](#vanliga-fel--felsökning)
-- [Nästa steg / Rekommendationer](#nästa-steg--rekommendationer)
+- [Autentisering-och-roller](#autentisering-och-roller)
+- [Seeding-av-data](#seeding-av-data)
+- [API-resurser-översikt](#api-resurser-översikt)
+- [Exempel-på-flöde](#exempel-på-flöde)
+- [Vanliga-fel-och-felsökning](#vanliga-fel-och-felsökning)
+- [Nästa-steg-och-rekommendationer](#nästa-steg-och-rekommendationer)
+
+---
+
+## Komma igång
+
+1. **Klona repot**
+  ```sh
+  git clone <repo-url>
+  cd LMS-backend-privat
+  ```
+2. **Bygg projektet**
+  ```sh
+  dotnet build LMS.API
+  ```
+3. **Starta API-servern**
+  ```sh
+  dotnet run --project LMS.API
+  ```
+4. **Öppna Swagger**
+  Gå till: [https://localhost:7213/swagger](https://localhost:7213/swagger)
+
+### Testanvändare
+Du kan använda dessa konton direkt mot API:et via Swagger:
+
+| Roll     | E-post             | Lösenord                |
+|----------|--------------------|-------------------------|
+| Admin    | admin@test.com     | ChangeThisDevOnly123!   |
+| Teacher  | teacher@test.com   | DefaultSeedPassword123! |
+| Student  | student@test.com   | DefaultSeedPassword123! |
+
+Fler testanvändare skapas automatiskt vid första start.
+
+---
 
 ## Arkitekturöversikt
 ```
