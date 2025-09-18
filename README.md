@@ -59,27 +59,5 @@ Exempel på endpoints:
 - Seeding skapar testdata automatiskt.
 
 ---
-Frågor eller förslag? Skapa en issue eller PR.
 
-## Komma igång
-### 1. Klona repo
-```
-
-# LMS Backend API (English Overview)
-
-A modern .NET 9-based REST API for a Learning Management System (LMS). The architecture follows clear layers (API / Presentation / Application / Application.Contracts / Domain / Infrastructure / Shared) and uses Identity for authentication, JWT for access tokens, and Mapster for object mapping.
-
-## Contents
-- [Architecture Overview](#architecture-overview)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- CI (GitHub Actions) with build + test + migration script validation
-- Rate limiting / throttling
-- Caching (e.g. MemoryCache or Redis) for heavy list endpoints
-
-## License
-Internal/private. Adapt as needed before publishing.
-
----
-Questions or suggestions? Open an issue or create a PR.
+:-)
