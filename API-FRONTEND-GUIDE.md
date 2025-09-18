@@ -24,8 +24,8 @@ Denna guide hjälper dig som frontendutvecklare att förstå och använda LMS Ba
 | Roll     | E-post             | Lösenord                |
 |----------|--------------------|-------------------------|
 | Admin    | admin@test.com     | ChangeThisDevOnly123!   |
-| Teacher  | teacher@test.com   | DefaultSeedPassword123! |
-| Student  | student@test.com   | DefaultSeedPassword123! |
+| Teacher  | teacher@test.com   | password                |
+| Student  | student@test.com   | password                |
 
 ## 5. Exempel på flöde
 1. Logga in och hämta JWT-token
