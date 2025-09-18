@@ -3,7 +3,6 @@ using LMS.API.Middleware;
 using LMS.API.Services;
 using LMS.Application.Mapping;
 using LMS.Infrastructure.Data;
-using LMS.Shared;
 using Mapster;
 
 namespace LMS.API;
