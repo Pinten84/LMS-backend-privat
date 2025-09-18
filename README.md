@@ -24,8 +24,8 @@ Ett modernt .NET 9-baserat REST API för Learning Management System (LMS).
 | Roll     | E-post             | Lösenord                |
 |----------|--------------------|-------------------------|
 | Admin    | admin@test.com     | ChangeThisDevOnly123!   |
-| Teacher  | teacher@test.com   | DefaultSeedPassword123! |
-| Student  | student@test.com   | DefaultSeedPassword123! |
+| Teacher  | teacher@test.com   | password                |
+| Student  | student@test.com   | password                |
 Fler testanvändare skapas automatiskt vid första start.
 
 ## Arkitektur
